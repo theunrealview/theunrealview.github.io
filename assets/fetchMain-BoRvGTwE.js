@@ -1,0 +1,1 @@
+import{l as n,d as i,f as e}from"./index-DkADagLl.js";async function a(r="es"){const o=await n();return{logo:i(e(o.branding?.logo,r)),slogan:e(o.branding?.slogan,r),video:i(e(o.video?.embedUrl,r)),brochure:i(e(o.brochure?.url,r)),email:o.inquiry?.email||""}}export{a as f};
