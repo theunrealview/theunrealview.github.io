@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.npm-cache/
+work/
+.env
+.env.local
+.env.*.local
+index.html
+404.html
+precio-del-visualizador-de-proyectos-arquitectonicos/index.html
+public/robots.txt
+public/sitemap.xml

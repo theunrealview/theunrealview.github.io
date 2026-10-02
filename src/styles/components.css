@@ -1,0 +1,1557 @@
+/* Estilos originales de los cuatro bloques; integración en site.css. */
+
+    .tuv-project-compare {
+      --tuv-ink: #3f4752;
+      --tuv-muted: #626872;
+      --tuv-accent: #73038a;
+      --tuv-border: #e1e2e5;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      background: #fff;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: left;
+      container-type: inline-size;
+      isolation: isolate;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .tuv-project-compare *,
+    .tuv-project-compare *::before,
+    .tuv-project-compare *::after {
+      box-sizing: border-box;
+    }
+
+    .tuv-project-compare .tuv-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      align-items: center;
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .tuv-project-compare .tuv-source {
+      min-width: 0;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .tuv-project-compare .tuv-label {
+      display: block;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-compare .tuv-source > .tuv-label {
+      margin-bottom: 24px;
+      color: var(--tuv-muted);
+      text-align: center;
+    }
+
+    .tuv-project-compare .tuv-items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0;
+      padding: 0 8px 0 0;
+      list-style: none;
+    }
+
+    .tuv-project-compare .tuv-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      min-height: 62px;
+      margin: 0;
+      padding: 14px 8px;
+      border: 1px solid var(--tuv-border);
+      border-radius: 10px;
+      background: #fafafa;
+      color: var(--tuv-ink);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      text-align: center;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-compare .tuv-convergence {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      height: 96px;
+      padding: 20px 0 12px;
+      color: var(--tuv-accent);
+    }
+
+    .tuv-project-compare .tuv-convergence svg {
+      flex: none;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .tuv-project-compare .tuv-convergence .tuv-flow-desktop {
+      display: none;
+      width: 100%;
+      height: 220px;
+    }
+
+    .tuv-project-compare .tuv-convergence .tuv-flow-mobile {
+      display: block;
+      width: 160px;
+      max-width: 100%;
+      height: 64px;
+    }
+
+    .tuv-project-compare .tuv-branches {
+      opacity: 0.24;
+    }
+
+    .tuv-project-compare .tuv-arrow {
+      opacity: 0.8;
+    }
+
+    .tuv-project-compare .tuv-viewer {
+      min-width: 0;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 28px 24px;
+      border: 1px solid var(--tuv-border);
+      border-top: 3px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .tuv-project-compare .tuv-viewer > .tuv-label {
+      margin-bottom: 22px;
+      color: var(--tuv-accent);
+    }
+
+    .tuv-project-compare .tuv-title {
+      margin: 0;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(23px, 6.5cqi, 32px);
+      font-weight: 700;
+      line-height: 1.32;
+      letter-spacing: -0.035em;
+      text-transform: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-compare .tuv-title span {
+      display: block;
+    }
+
+    .tuv-project-compare .tuv-link-area {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--tuv-border);
+    }
+
+    .tuv-project-compare .tuv-link-area > .tuv-label {
+      margin-bottom: 12px;
+      color: var(--tuv-ink);
+      font-size: 12px;
+    }
+
+    .tuv-project-compare .tuv-url {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      margin: 0;
+      padding: 13px 14px;
+      border: 1px solid var(--tuv-border);
+      border-radius: 6px;
+      background: #f7f7f8;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0;
+      container-type: inline-size;
+    }
+
+    /* La URL se adapta al espacio disponible y permanece en una sola línea. */
+    .tuv-project-compare .tuv-url-text {
+      display: block;
+      font-size: min(14px, 5.6cqi);
+      white-space: nowrap;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-compare .tuv-url-project {
+      color: var(--tuv-accent);
+      font-weight: 500;
+    }
+
+    @container (min-width: 760px) {
+      .tuv-project-compare .tuv-layout {
+        grid-template-columns: minmax(0, 1fr) 110px minmax(0, 1.25fr);
+        padding: 64px 32px;
+      }
+
+      .tuv-project-compare .tuv-source {
+        max-width: none;
+        margin: 0;
+      }
+
+      .tuv-project-compare .tuv-label {
+        font-size: 14px;
+      }
+
+      .tuv-project-compare .tuv-items {
+        gap: 16px;
+        padding-right: 12px;
+      }
+
+      .tuv-project-compare .tuv-item {
+        min-height: 68px;
+        font-size: 14px;
+      }
+
+      .tuv-project-compare .tuv-convergence {
+        height: 260px;
+        padding: 24px 14px 0;
+      }
+
+      .tuv-project-compare .tuv-convergence .tuv-flow-desktop {
+        display: block;
+      }
+
+      .tuv-project-compare .tuv-convergence .tuv-flow-mobile {
+        display: none;
+      }
+
+      .tuv-project-compare .tuv-viewer {
+        max-width: none;
+        padding: 34px 28px;
+      }
+
+      .tuv-project-compare .tuv-title {
+        font-size: clamp(27px, 3cqi, 34px);
+      }
+
+      .tuv-project-compare .tuv-link-area > .tuv-label {
+        font-size: 13px;
+      }
+    }
+
+    @keyframes tuvCompareReveal {
+      from { opacity: 0.4; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes tuvCompareFlow {
+      from { opacity: 0.15; }
+      to { opacity: 1; }
+    }
+
+    .tuv-project-compare.tuv-play .tuv-item {
+      animation: tuvCompareReveal 480ms ease-out both;
+    }
+
+    .tuv-project-compare.tuv-play .tuv-item:nth-child(2) { animation-delay: 45ms; }
+    .tuv-project-compare.tuv-play .tuv-item:nth-child(3) { animation-delay: 90ms; }
+    .tuv-project-compare.tuv-play .tuv-item:nth-child(4) { animation-delay: 135ms; }
+    .tuv-project-compare.tuv-play .tuv-item:nth-child(5) { animation-delay: 180ms; }
+    .tuv-project-compare.tuv-play .tuv-item:nth-child(6) { animation-delay: 225ms; }
+
+    .tuv-project-compare.tuv-play .tuv-convergence {
+      animation: tuvCompareFlow 450ms ease-out 300ms both;
+    }
+
+    .tuv-project-compare.tuv-play .tuv-viewer {
+      animation: tuvCompareReveal 600ms ease-out 480ms both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tuv-project-compare.tuv-play .tuv-item,
+      .tuv-project-compare.tuv-play .tuv-convergence,
+      .tuv-project-compare.tuv-play .tuv-viewer {
+        animation: none;
+      }
+    }
+  
+
+    .tuv-demo-experience {
+      --tuv-ink: #3f4752;
+      --tuv-accent: #73038a;
+      --tuv-border: #e1e2e5;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      background: #fff;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      container-type: inline-size;
+      isolation: isolate;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .tuv-demo-experience *,
+    .tuv-demo-experience *::before,
+    .tuv-demo-experience *::after {
+      box-sizing: border-box;
+    }
+
+    .tuv-demo-experience .tuv-demo-inner {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px 8px 32px;
+    }
+
+    .tuv-demo-experience .tuv-demo-heading {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tuv-demo-experience .tuv-demo-trigger {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      max-width: 100%;
+      margin: 0;
+      padding: 8px 12px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 0.015em;
+      text-align: center;
+      cursor: pointer;
+      transition: color 250ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .tuv-demo-experience .tuv-demo-trigger-text {
+      display: block;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-demo-experience .tuv-demo-arrow {
+      display: block;
+      width: 56px;
+      height: 12px;
+      fill: var(--tuv-accent);
+      overflow: visible;
+      pointer-events: none;
+      animation: tuvDemoArrow 3s ease-in-out infinite;
+    }
+
+    .tuv-demo-experience .tuv-demo-shell {
+      position: relative;
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid rgba(115, 3, 138, 0.32);
+      border-top: 3px solid var(--tuv-accent);
+      border-radius: 12px;
+      background: #fff;
+      animation: tuvDemoBreathMobile 4.5s ease-in-out infinite;
+      transition:
+        border-color 300ms ease,
+        box-shadow 300ms ease;
+    }
+
+    .tuv-demo-experience .tuv-demo-toolbar {
+      display: none;
+      align-items: center;
+      gap: 7px;
+      height: 46px;
+      padding: 0 14px;
+      border-bottom: 1px solid var(--tuv-border);
+      background: #f7f5f8;
+    }
+
+    .tuv-demo-experience .tuv-demo-dot {
+      display: block;
+      width: 9px;
+      height: 9px;
+      flex: 0 0 9px;
+      border-radius: 50%;
+      background: #d3ced7;
+    }
+
+    .tuv-demo-experience .tuv-demo-dot:first-child {
+      background: var(--tuv-accent);
+    }
+
+    .tuv-demo-experience .tuv-demo-dot:nth-child(2) {
+      background: #b8a8bf;
+    }
+
+    .tuv-demo-experience .tuv-demo-address {
+      flex: 1;
+      min-width: 0;
+      margin-left: 10px;
+      padding: 6px 12px;
+      overflow: hidden;
+      border: 1px solid #ebe6ee;
+      border-radius: 6px;
+      background: #fff;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.5;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    /* Mobile: altura proporcional al ancho, sin vh ni altura mínima. */
+    .tuv-demo-experience .tuv-demo-stage {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      aspect-ratio: 3 / 6;
+      background: #f7f5f8;
+    }
+
+    .tuv-demo-experience .tuv-demo-app {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: #fff;
+    }
+
+    .tuv-demo-experience .tuv-demo-trigger:focus-visible {
+      outline: 2px solid var(--tuv-accent);
+      outline-offset: 5px;
+    }
+
+    .tuv-demo-experience .tuv-demo-shell:focus-within,
+    .tuv-demo-experience .tuv-demo-shell.tuv-demo-engaged {
+      animation: none;
+      border-color: var(--tuv-accent);
+      box-shadow:
+        0 12px 28px rgba(63, 71, 82, 0.12),
+        0 0 0 3px rgba(115, 3, 138, 0.07);
+    }
+
+    @container (min-width: 768px) {
+      .tuv-demo-experience .tuv-demo-inner {
+        padding: 40px 32px 64px;
+      }
+
+      .tuv-demo-experience .tuv-demo-trigger {
+        gap: 10px;
+        padding: 8px 16px;
+        font-size: 24px;
+      }
+
+      .tuv-demo-experience .tuv-demo-heading {
+        margin-bottom: 34px;
+      }
+
+      .tuv-demo-experience .tuv-demo-arrow {
+        width: 84px;
+        height: 18px;
+      }
+
+      .tuv-demo-experience .tuv-demo-shell {
+        border-radius: 14px;
+        animation-name: tuvDemoBreathDesktop;
+      }
+
+      .tuv-demo-experience .tuv-demo-toolbar {
+        display: flex;
+      }
+
+      .tuv-demo-experience .tuv-demo-stage {
+        aspect-ratio: 16 / 9;
+      }
+
+      .tuv-demo-experience .tuv-demo-shell:focus-within,
+      .tuv-demo-experience .tuv-demo-shell.tuv-demo-engaged {
+        animation: none;
+        box-shadow:
+          0 16px 42px rgba(63, 71, 82, 0.12),
+          0 0 0 5px rgba(115, 3, 138, 0.08);
+      }
+    }
+
+    @keyframes tuvDemoBreathMobile {
+      0%, 100% {
+        box-shadow:
+          0 8px 20px rgba(63, 71, 82, 0.10),
+          0 0 0 2px rgba(115, 3, 138, 0.025);
+      }
+      50% {
+        box-shadow:
+          0 12px 28px rgba(115, 3, 138, 0.17),
+          0 0 0 4px rgba(115, 3, 138, 0.06);
+      }
+    }
+
+    @keyframes tuvDemoBreathDesktop {
+      0%, 100% {
+        box-shadow:
+          0 14px 36px rgba(63, 71, 82, 0.10),
+          0 0 0 5px rgba(115, 3, 138, 0.035),
+          0 0 20px rgba(115, 3, 138, 0.035);
+      }
+      50% {
+        box-shadow:
+          0 20px 48px rgba(115, 3, 138, 0.18),
+          0 0 0 9px rgba(115, 3, 138, 0.07),
+          0 0 42px rgba(115, 3, 138, 0.12);
+      }
+    }
+
+    @keyframes tuvDemoArrow {
+      0%, 100% {
+        transform: translateY(0);
+        filter: drop-shadow(0 2px 2px rgba(115, 3, 138, 0.12));
+      }
+      50% {
+        transform: translateY(4px);
+        filter: drop-shadow(0 4px 5px rgba(115, 3, 138, 0.28));
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .tuv-demo-experience .tuv-demo-trigger:hover {
+        color: var(--tuv-accent);
+      }
+
+      .tuv-demo-experience .tuv-demo-shell:hover {
+        animation: none;
+        border-color: var(--tuv-accent);
+        box-shadow:
+          0 18px 44px rgba(115, 3, 138, 0.17),
+          0 0 0 5px rgba(115, 3, 138, 0.08);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tuv-demo-experience .tuv-demo-arrow {
+        animation: none;
+        transform: none;
+        filter: none;
+      }
+
+      .tuv-demo-experience .tuv-demo-shell,
+      .tuv-demo-experience .tuv-demo-trigger {
+        animation: none;
+        transition: none;
+      }
+
+      .tuv-demo-experience .tuv-demo-shell {
+        box-shadow: 0 10px 24px rgba(63, 71, 82, 0.12);
+      }
+    }
+  
+
+    .tuv-project-details {
+      --tuv-ink: #3f4752;
+      --tuv-muted: #626872;
+      --tuv-accent: #73038a;
+      --tuv-border: #e1e2e5;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      background: #fff;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      text-align: left;
+      container-type: inline-size;
+      isolation: isolate;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .tuv-project-details *,
+    .tuv-project-details *::before,
+    .tuv-project-details *::after {
+      box-sizing: border-box;
+    }
+
+    .tuv-project-details .tuv-details-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .tuv-project-details .tuv-details-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      margin: 0;
+      padding: 28px 24px;
+      border: 1px solid var(--tuv-border);
+      border-top: 3px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .tuv-project-details .tuv-details-title {
+      margin: 0 0 28px;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.035em;
+      text-transform: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-details .tuv-details-steps,
+    .tuv-project-details .tuv-details-inclusions {
+      display: grid;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tuv-project-details .tuv-details-step {
+      display: grid;
+      grid-template-columns: 36px minmax(0, 1fr);
+      align-items: start;
+      gap: 12px;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tuv-project-details .tuv-details-number {
+      display: block;
+      color: var(--tuv-accent);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    .tuv-project-details .tuv-details-content {
+      min-width: 0;
+    }
+
+    .tuv-project-details .tuv-details-subtitle {
+      margin: 0 0 6px;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
+      text-transform: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-details .tuv-details-text {
+      margin: 0;
+      padding: 0;
+      color: var(--tuv-muted);
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-project-details .tuv-details-inclusions {
+      gap: 20px;
+    }
+
+    .tuv-project-details .tuv-details-inclusion {
+      display: grid;
+      grid-template-columns: 5px minmax(0, 1fr);
+      align-items: start;
+      gap: 14px;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tuv-project-details .tuv-details-inclusion::before {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 5px;
+      margin-top: 9px;
+      border-radius: 50%;
+      background: var(--tuv-accent);
+    }
+
+    /* Texto y botón centrados, fuera de ambas tarjetas. */
+    .tuv-project-details .tuv-details-footer {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+      text-align: center;
+    }
+
+    .tuv-project-details .tuv-details-footer > .tuv-details-text {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .tuv-project-details .tuv-details-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      min-height: 44px;
+      margin-top: 20px;
+      padding: 12px 18px;
+      border: 1px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: var(--tuv-accent);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.025em;
+      text-align: center;
+      text-decoration: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+      transition: background-color 180ms ease, border-color 180ms ease;
+    }
+
+    .tuv-project-details .tuv-details-button:hover {
+      border-color: #5f0272;
+      background: #5f0272;
+    }
+
+    .tuv-project-details .tuv-details-button:focus-visible {
+      outline: 2px solid var(--tuv-accent);
+      outline-offset: 4px;
+    }
+
+    @container (min-width: 760px) {
+      .tuv-project-details .tuv-details-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 64px 32px;
+      }
+
+      .tuv-project-details .tuv-details-card {
+        padding: 34px 28px;
+      }
+
+      .tuv-project-details .tuv-details-title {
+        font-size: 28px;
+      }
+
+      .tuv-project-details .tuv-details-footer {
+        padding: 0 32px 64px;
+      }
+    }
+
+    @container (max-width: 360px) {
+      .tuv-project-details .tuv-details-card {
+        padding-right: 18px;
+        padding-left: 18px;
+      }
+
+      .tuv-project-details .tuv-details-step {
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px;
+      }
+    }
+
+    @keyframes tuvDetailsReveal {
+      from {
+        opacity: 0.5;
+        transform: translateY(5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tuv-project-details.tuv-details-play .tuv-details-card {
+      animation: tuvDetailsReveal 550ms ease-out both;
+    }
+
+    .tuv-project-details.tuv-details-play .tuv-details-card:nth-child(2) {
+      animation-delay: 100ms;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tuv-project-details.tuv-details-play .tuv-details-card {
+        animation: none;
+      }
+
+      .tuv-project-details .tuv-details-button {
+        transition: none;
+      }
+    }
+  
+
+  .tuv-project-details .tuv-details-button {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: #73038a;
+    border-color: #73038a;
+    transform: translateY(0) scale(1);
+    transform-origin: center;
+    -webkit-tap-highlight-color: transparent;
+    animation: tuvCtaGlow 4s ease-in-out infinite;
+    transition:
+      transform 350ms cubic-bezier(0.2, 0.8, 0.2, 1),
+      background-color 350ms ease,
+      border-color 350ms ease,
+      box-shadow 350ms ease;
+  }
+
+  /* Destello que recorre la superficie del botón. */
+  .tuv-project-details .tuv-details-button::before {
+    content: "";
+    position: absolute;
+    inset: -70% auto -70% -65%;
+    width: 45%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.08) 25%,
+      rgba(255, 255, 255, 0.48) 50%,
+      rgba(255, 255, 255, 0.08) 75%,
+      transparent
+    );
+    transform: translateX(0) rotate(22deg);
+    pointer-events: none;
+    animation: tuvCtaShine 5.5s ease-in-out infinite;
+  }
+
+  /* Borde interior iluminado. */
+  .tuv-project-details .tuv-details-button::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: inherit;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 350ms ease;
+  }
+
+  @keyframes tuvCtaGlow {
+    0%, 100% {
+      box-shadow:
+        0 5px 16px rgba(115, 3, 138, 0.14),
+        0 0 0 0 rgba(115, 3, 138, 0);
+    }
+    50% {
+      box-shadow:
+        0 8px 26px rgba(115, 3, 138, 0.30),
+        0 0 0 5px rgba(115, 3, 138, 0.045);
+    }
+  }
+
+  @keyframes tuvCtaShine {
+    0%, 58% {
+      transform: translateX(0) rotate(22deg);
+      opacity: 0;
+    }
+    62% {
+      opacity: 1;
+    }
+    82% {
+      transform: translateX(460%) rotate(22deg);
+      opacity: 1;
+    }
+    83%, 100% {
+      transform: translateX(460%) rotate(22deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes tuvCtaHoverShine {
+    0% {
+      transform: translateX(0) rotate(22deg);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    88% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(460%) rotate(22deg);
+      opacity: 0;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .tuv-project-details .tuv-details-button:hover {
+      animation: none;
+      background: #8504a0;
+      border-color: #8504a0;
+      transform: translateY(-4px) scale(1.045);
+      box-shadow:
+        0 14px 30px rgba(115, 3, 138, 0.32),
+        0 0 0 6px rgba(115, 3, 138, 0.06);
+    }
+
+    .tuv-project-details .tuv-details-button:hover::before {
+      animation: tuvCtaHoverShine 750ms ease-out both;
+    }
+
+    .tuv-project-details .tuv-details-button:hover::after {
+      opacity: 1;
+    }
+  }
+
+  .tuv-project-details .tuv-details-button:focus-visible {
+    animation: none;
+    outline: 2px solid #73038a;
+    outline-offset: 5px;
+    box-shadow: 0 8px 26px rgba(115, 3, 138, 0.28);
+  }
+
+  .tuv-project-details .tuv-details-button:active {
+    animation: none;
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(115, 3, 138, 0.22);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tuv-project-details .tuv-details-button,
+    .tuv-project-details .tuv-details-button:hover,
+    .tuv-project-details .tuv-details-button:active {
+      animation: none;
+      transition: none;
+      transform: none;
+      box-shadow: 0 5px 16px rgba(115, 3, 138, 0.18);
+    }
+
+    .tuv-project-details .tuv-details-button::before,
+    .tuv-project-details .tuv-details-button::after {
+      display: none;
+      animation: none;
+      transition: none;
+    }
+  }
+.tuv-project-details .tuv-details-button {
+    animation: tuvCtaGlow 3s ease-in-out infinite;
+  }
+
+  .tuv-project-details .tuv-details-button::before {
+    animation-duration: 3s;
+  }
+
+  @keyframes tuvCtaGlow {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      box-shadow:
+        0 5px 16px rgba(115, 3, 138, 0.20),
+        0 0 0 0 rgba(115, 3, 138, 0.12);
+    }
+
+    45% {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow:
+        0 12px 32px rgba(115, 3, 138, 0.40),
+        0 0 0 8px rgba(115, 3, 138, 0.07);
+    }
+
+    75% {
+      transform: translateY(0) scale(1);
+      box-shadow:
+        0 6px 20px rgba(115, 3, 138, 0.24),
+        0 0 0 14px rgba(115, 3, 138, 0);
+    }
+  }
+
+  @keyframes tuvCtaShine {
+    0%, 8% {
+      transform: translateX(0) rotate(22deg);
+      opacity: 0;
+    }
+
+    14% {
+      opacity: 1;
+    }
+
+    48% {
+      transform: translateX(460%) rotate(22deg);
+      opacity: 1;
+    }
+
+    49%, 100% {
+      transform: translateX(460%) rotate(22deg);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tuv-project-details .tuv-details-button {
+      animation: none;
+      transform: none;
+    }
+
+    .tuv-project-details .tuv-details-button::before {
+      animation: none;
+      display: none;
+    }
+  }
+
+
+    .tuv-visualizer-pricing {
+      --tuv-font: "Poppins", sans-serif;
+      --tuv-ink: #3f4752;
+      --tuv-muted: #626872;
+      --tuv-accent: #73038a;
+      --tuv-border: #e1e2e5;
+      --tuv-tint: #f5edf8;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      background: #fff;
+      color: var(--tuv-ink);
+      font-family: var(--tuv-font);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+      text-align: left;
+      container-type: inline-size;
+      isolation: isolate;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .tuv-visualizer-pricing *,
+    .tuv-visualizer-pricing *::before,
+    .tuv-visualizer-pricing *::after {
+      box-sizing: border-box;
+      font-family: var(--tuv-font);
+    }
+
+    .tuv-visualizer-pricing .tuv-price-wrap {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-card {
+      min-width: 0;
+      margin: 0;
+      padding: 30px 24px;
+      border: 1px solid var(--tuv-border);
+      border-top: 3px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-header {
+      text-align: center;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-badge {
+      display: inline-block;
+      max-width: 100%;
+      margin: 0 0 22px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--tuv-tint);
+      color: var(--tuv-accent);
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.1em;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-title {
+      margin: 0 0 16px;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-family: var(--tuv-font);
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.32;
+      letter-spacing: -0.025em;
+      text-transform: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-description {
+      margin: 0;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.65;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-amount-area {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-old {
+      margin: 0 0 8px;
+      color: var(--tuv-muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-old del {
+      display: inline-block;
+      margin-left: 6px;
+      white-space: nowrap;
+      text-decoration-thickness: 1px;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-current {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      gap: 8px;
+      margin: 0;
+      color: var(--tuv-ink);
+    }
+
+    .tuv-visualizer-pricing .tuv-price-value {
+      font-size: clamp(40px, 12cqi, 56px);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.055em;
+      white-space: nowrap;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-currency {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-promotion {
+      margin: 12px 0 0;
+      color: var(--tuv-ink);
+      font-size: 14px;
+      line-height: 1.6;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-savings {
+      margin: 10px 0 0;
+      color: var(--tuv-accent);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.6;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-benefits {
+      display: grid;
+      gap: 12px;
+      margin: 26px 0 0;
+      padding: 22px 0 0;
+      border-top: 1px solid var(--tuv-border);
+      list-style: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-benefit {
+      display: grid;
+      grid-template-columns: 14px minmax(0, 1fr);
+      align-items: start;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-size: 15px;
+      line-height: 1.6;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-benefit::before {
+      content: "✓";
+      color: var(--tuv-accent);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-info {
+      margin-top: 24px;
+      padding: 18px;
+      border-left: 2px solid var(--tuv-accent);
+      border-radius: 0 6px 6px 0;
+      background: var(--tuv-tint);
+    }
+
+    .tuv-visualizer-pricing .tuv-price-info-title {
+      margin: 0 0 10px;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.45;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-info-text {
+      margin: 0;
+      color: var(--tuv-ink);
+      font-size: 15px;
+      line-height: 1.65;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-info-text + .tuv-price-info-text {
+      margin-top: 12px;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-info-text strong {
+      font-weight: 700;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-time {
+      margin: 24px 0 14px;
+      color: var(--tuv-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-time-part {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-cta {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 54px;
+      margin: 0;
+      padding: 15px 18px;
+      overflow: hidden;
+      border: 1px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: var(--tuv-accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.015em;
+      text-align: center;
+      text-decoration: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+      animation: tuvPriceGlow 3s ease-in-out infinite;
+      transition:
+        transform 350ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        background-color 350ms ease,
+        box-shadow 350ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-cta::before {
+      content: "";
+      position: absolute;
+      inset: -70% auto -70% -65%;
+      width: 45%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.08) 25%,
+        rgba(255, 255, 255, 0.48) 50%,
+        rgba(255, 255, 255, 0.08) 75%,
+        transparent
+      );
+      pointer-events: none;
+      animation: tuvPriceShine 3s ease-in-out infinite;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-currency-note {
+      margin: 16px 0 0;
+      color: var(--tuv-muted);
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-footnote {
+      margin: 16px 0 0;
+      padding: 0 4px;
+      color: var(--tuv-muted);
+      font-size: 13px;
+      line-height: 1.65;
+      text-align: center;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-contact {
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-contact-title {
+      margin: 0;
+      padding: 0;
+      color: var(--tuv-ink);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-contact-text {
+      margin: 8px 0 18px;
+      color: var(--tuv-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      min-height: 50px;
+      padding: 13px 26px;
+      border: 2px solid var(--tuv-accent);
+      border-radius: 10px;
+      background: var(--tuv-tint);
+      color: var(--tuv-accent);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.015em;
+      text-align: center;
+      text-decoration: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      hyphens: none;
+      transition:
+        background-color 200ms ease,
+        color 200ms ease,
+        transform 200ms ease,
+        box-shadow 200ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .tuv-visualizer-pricing .tuv-price-cta:focus-visible,
+    .tuv-visualizer-pricing .tuv-price-contact-button:focus-visible {
+      outline: 2px solid var(--tuv-accent);
+      outline-offset: 5px;
+    }
+
+    @container (min-width: 600px) {
+      .tuv-visualizer-pricing .tuv-price-wrap {
+        padding: 64px 20px;
+      }
+
+      .tuv-visualizer-pricing .tuv-price-card {
+        padding: 34px 32px;
+      }
+
+      .tuv-visualizer-pricing .tuv-price-title {
+        font-size: 34px;
+      }
+    }
+
+    @keyframes tuvPriceGlow {
+      0%, 100% {
+        transform: translateY(0);
+        box-shadow:
+          0 5px 16px rgba(115, 3, 138, 0.20),
+          0 0 0 0 rgba(115, 3, 138, 0.12);
+      }
+      45% {
+        transform: translateY(-3px);
+        box-shadow:
+          0 12px 32px rgba(115, 3, 138, 0.40),
+          0 0 0 7px rgba(115, 3, 138, 0.07);
+      }
+      75% {
+        transform: translateY(0);
+        box-shadow:
+          0 6px 20px rgba(115, 3, 138, 0.24),
+          0 0 0 12px rgba(115, 3, 138, 0);
+      }
+    }
+
+    @keyframes tuvPriceShine {
+      0%, 8% {
+        transform: translateX(0) rotate(22deg);
+        opacity: 0;
+      }
+      14% {
+        opacity: 1;
+      }
+      48% {
+        transform: translateX(460%) rotate(22deg);
+        opacity: 1;
+      }
+      49%, 100% {
+        transform: translateX(460%) rotate(22deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes tuvPriceHoverShine {
+      from {
+        transform: translateX(0) rotate(22deg);
+        opacity: 0;
+      }
+      12%, 88% {
+        opacity: 1;
+      }
+      to {
+        transform: translateX(460%) rotate(22deg);
+        opacity: 0;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .tuv-visualizer-pricing .tuv-price-cta:hover {
+        animation: none;
+        background: #8504a0;
+        transform: translateY(-4px);
+        box-shadow:
+          0 14px 30px rgba(115, 3, 138, 0.32),
+          0 0 0 6px rgba(115, 3, 138, 0.06);
+      }
+
+      .tuv-visualizer-pricing .tuv-price-cta:hover::before {
+        animation: tuvPriceHoverShine 750ms ease-out both;
+      }
+
+      .tuv-visualizer-pricing .tuv-price-contact-button:hover {
+        background: var(--tuv-accent);
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(115, 3, 138, 0.18);
+      }
+    }
+
+    .tuv-visualizer-pricing .tuv-price-cta:active {
+      animation: none;
+      transform: translateY(1px);
+    }
+
+    .tuv-visualizer-pricing .tuv-price-contact-button:active {
+      transform: translateY(1px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tuv-visualizer-pricing .tuv-price-cta,
+      .tuv-visualizer-pricing .tuv-price-cta:hover,
+      .tuv-visualizer-pricing .tuv-price-cta:active {
+        animation: none;
+        transition: none;
+        transform: none;
+        box-shadow: 0 5px 16px rgba(115, 3, 138, 0.18);
+      }
+
+      .tuv-visualizer-pricing .tuv-price-cta::before {
+        display: none;
+        animation: none;
+      }
+
+      .tuv-visualizer-pricing .tuv-price-contact-button,
+      .tuv-visualizer-pricing .tuv-price-contact-button:hover,
+      .tuv-visualizer-pricing .tuv-price-contact-button:active {
+        transition: none;
+        transform: none;
+      }
+    }
+  

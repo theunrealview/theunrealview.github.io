@@ -1,0 +1,23 @@
+{
+  "name": "the-unreal-view-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-pages.mjs --development",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "node scripts/generate-pages.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node scripts/check-build.mjs"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.2.7"
+  },
+  "devDependencies": {
+    "vite": "^8.3.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
